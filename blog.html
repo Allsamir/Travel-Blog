@@ -7,21 +7,62 @@
           <link rel="shortcut icon" href="https://static.thenounproject.com/png/3359818-200.png" type="image/x-icon">
           <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body style="background-color: #262629;">
+<body style="background-color: #262629; color: wheat;">
      <header>
-          <img class="img" src="img/Allsamir.jpg" alt="My image">
+          <img title="I'm Allsamir" class="img" src="img/Allsamir.jpg" alt="My image">
+          <ul>
+               <li><a href="index.html" class="nav-link">Home</a></li>
+               <li><a href="blog.html" class="nav-link">Blog</a></li>
+               <li><a href="#" class="nav-link">Contact</a></li>
+               <li><a href="#" class="nav-link">Travel</a></li>
+          </ul>
      </header>   
-     <section class="blog">
-          <div class="content-1" style="text-align: center;">
-               <h1>My Travel Blog</h1>
-               <p><strong>Sorry to say, But I didn't travel anywhere 🤣</strong></p>
-          </div>
-     </section>
-     <section class="blog blog-new-img">
-          <div class="content-1" style="text-align: center;">
-               <h1>Recently My Beloved Visited Cox's bazar</h1>
-               <p>She had something to say but I didn't let her to say 😜</p>
-          </div>
-     </section>
+          <main>
+          <section class="blog">
+               <div class="content-1" style="text-align: center;">
+                    <h1>My Travel Blog</h1>
+                    <p><strong>Sorry to say, But I didn't travel anywhere 🤣</strong></p>
+               </div>
+          </section>
+          <section class="blog blog-new-img">
+               <div class="content-1" style="text-align: center;">
+                    <h1>Recently My Beloved Visited Cox's bazar</h1>
+                    <p>She had something to say but I didn't let her to say 😜</p>
+               </div>
+          </section>
+          <section class="form">
+               <div>
+                    <h1>Fill up the form to stay connected</h1>
+                    <form action="">
+                         <label for="name">
+                              Your Name:
+                              <input type="text" name="yourName" id="name">
+                         </label>
+                         <label for="email">
+                              Your Email:
+                              <input type="text" name="yourEmail" id="email">
+                         </label>
+                         <fieldset>
+                              <legend>Pick One</legend>
+                              <label for="cox's-bazar">
+                                   <input type="radio" value="cox's-bazar" name="travel" id="cox's-bazar">
+                                   Cox's Bazar
+                              </label>
+                              <label for="bandorbon">
+                                   <input type="radio" value="bandorbon" name="travel" id="bandorbon">
+                                   Bandorbon
+                              </label>
+                              <label for="syhlet">
+                                   <input type="radio" value="syhlet" name="travel" id="syhlet">
+                                   Syhlet
+                              </label>
+                         </fieldset>
+                         <input type="submit" value="Submit">
+                         <input type="reset" value="Reset">
+                    </form>
+               </div>
+               <form action="/action_page.php">
+          </section>
+     </main>
 </body>
 </html>
